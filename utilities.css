@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+}
+
+/* navbar */
+
+header{
+    position: fixed;
+    left: 0;
+    right: 0;
+   top: 0;
+  z-index: 100;
+  background-color: black;
+  height: 100px;
+}
+
+nav{
+    box-shadow: 5px 5px 8px rgba(231, 231, 56,.5);
+    z-index: 100;
+    background-color: black;
+}
+
+.navbar-brand{
+    font-size: 35px;
+    font-weight: bold;
+    transition: all .5s ease-in-out;
+}
+
+.navbar-brand:hover{
+    color: orange;
+}
+
+.nav-item a{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.nav-item a:hover{
+    color: orange;
+}

@@ -1,0 +1,61 @@
+.projects{
+    padding-top: 100px;
+    z-index: 1;
+}
+
+.projects h1{
+    position: relative;
+    color: #fff;
+    font-weight: bold;
+}
+
+.projects h1::after{
+    content: '';
+    background-color: orange;
+    height: 8px;
+    position: absolute;
+    border-radius: 50px;
+    bottom: -20px;
+    width: 250px;
+    left: 50%;
+    transform: translate(-50%);
+}
+ .container-lg{
+    margin-top: 100px;
+ } 
+
+.card{
+    background-color: black;
+    border:2px solid orange;
+    color: #fff;
+}
+
+.card-title{
+    color: orange;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.card-text{
+    text-align: justify;
+}
+
+.card .btn{
+    color: orange;
+    border: 1px solid orange;
+    font-size: 20px;
+    font-weight: bold;
+    transition: all .6s ease-in;
+}
+
+.card .btn:hover{
+    background-color: orange;
+    color: black;
+}
+.card img{
+    transition: all .5s ease-in;
+}
+
+.card img:hover{
+    transform: scale(1.5);
+}

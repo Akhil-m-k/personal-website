@@ -1,0 +1,90 @@
+
+
+.skills{
+    width: 100%;
+    max-width: 600px;
+    padding: 0 20px;
+}
+
+.skill-name{
+    font-size: 15px;
+    font-weight: bold;
+    color: #fff;
+    text-transform: uppercase;
+    margin: 20px 0px;
+}
+
+.skill-bar{
+    height: 14px;
+    background: black;
+    border-radius: 3px;
+}
+
+.skill-per{
+    height: 14px;
+    background-color:orange;
+    border-radius: 3px;
+    position: relative;
+    font-weight: bold;
+    animation: fillbars 2.5s 1;
+}
+
+.skill-per::before{
+    content: attr(per);
+    position: absolute;
+    padding: 4px 6px;
+    background: #fff;
+    border-radius: 4px;
+    font-size: 12px;
+    right: 0px;
+    top: -39px;
+    transform:translateX(50%);
+}
+
+.skill-per::after{
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    top: -20px;
+    right: 0;
+    transform: translateX(50%) rotate(45deg);
+    border-radius: 2px;
+}
+
+.main-container{
+    justify-content: center;
+    align-items: center;
+    height: 800px;
+}
+
+@keyframes fillbars{
+    from{
+        width: 0;
+    }
+    to{
+        width: 100%;
+    }
+}
+
+.cv{
+    display: block;
+    margin-top: 100px;
+}
+
+.cv a{
+    text-decoration: none;
+    color: #fff;
+    border: 2px solid orange;
+    padding: 10px 15px;
+    border-radius: 7px;
+    font-weight: 600;
+    font-size: 20px;
+
+ }
+
+ .cv:active a{
+    background-color: orange;
+    color: black;
+ }
